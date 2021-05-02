@@ -1,0 +1,95 @@
+$setBackgroundColor: #EF4423; 
+$titleBackgroundColor: #332B29;
+$titleColor: white;
+
+@mixin navbar {
+    background-color: $setBackgroundColor;
+    color: $titleBackgroundColor;
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    width: 100%;
+    margin: 0%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    h1, h2{
+        font-family: 'Gamja Flower', cursive;
+        font-size: 1.7em;
+    }
+}
+
+header{
+    @include navbar;
+    top: 0%;
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        font-family: 'Gamja Flower', cursive;
+        padding-right: 35px;
+        & a{
+            text-decoration: none;
+            padding: 0 10px;
+            color: $titleBackgroundColor;
+            text-transform: uppercase;
+        }
+        & a:hover {
+            color: $titleColor;
+        }
+    }
+}
+footer{
+    @include navbar;
+    bottom: 0%;
+    .left{
+        display: flex;
+         width: 50%;
+    }
+    .logoDescodeuses{
+        position: relative;
+        top: 20px;
+    } 
+    .right{
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+@mixin setTitleH1{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $titleBackgroundColor;
+    color: white;
+    height: 40px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+section{
+    margin-top: 70px;
+    h1{
+        @include setTitleH1
+    }
+    article p{
+        margin: 3% 2%;
+    }
+    article ul li{
+    padding: 5px;
+    }
+    .imagesJudo{
+        display: flex;
+        margin-bottom: 10%;
+    }
+    .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    }
+
+}
+
+

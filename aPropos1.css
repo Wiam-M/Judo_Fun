@@ -1,0 +1,129 @@
+body {
+  width: 100%;
+  margin: 0%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body h1, body h2 {
+  font-family: 'Gamja Flower', cursive;
+  font-size: 1.7em;
+}
+
+header {
+  background-color: #EF4423;
+  color: #332B29;
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 0%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  font-family: 'Gamja Flower', cursive;
+  padding-right: 35px;
+}
+
+header nav ul a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: #332B29;
+  text-transform: uppercase;
+}
+
+header nav ul a:hover {
+  color: white;
+}
+
+footer {
+  background-color: #EF4423;
+  color: #332B29;
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  bottom: 0%;
+}
+
+footer .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+footer .logoDescodeuses {
+  position: relative;
+  top: 20px;
+}
+
+footer .right {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+section {
+  margin-top: 70px;
+}
+
+section h1 {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #332B29;
+  color: white;
+  height: 40px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+section article p {
+  margin: 3% 2%;
+}
+
+section article ul li {
+  padding: 5px;
+}
+
+section .imagesJudo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10%;
+}
+
+section .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+}
+/*# sourceMappingURL=aPropos1.css.map */
